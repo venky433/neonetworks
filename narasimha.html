@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>hi</title>
+		<style>
+		.makeUP{
+		color:green;
+		text-align:center
+}
+		</style> 
+			<script>
+			function display(){
+         	var name = document.getElementById("name").value;
+         	if(name == "" || name == null){
+         		alert("please enter name");
+         	}else{
+         	alert("welcome "+ document.getElementById("name").value);
+         	}
+         	
+         }
+      </script>
+	</head>
+	<body>
+		<h1 class="makeUP">narasimhareddy</h1>
+		<form onsubmit="display()">
+			<input type="text" id="name" placeholder="enter name"/>
+			<button type="submit">clicke me</button>
+			<button type="reset"> re set</button>
+		</form>
+	</body>
+</html> 
