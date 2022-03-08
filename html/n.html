@@ -1,0 +1,45 @@
+<html>
+   <head>
+      <title>html forms</title>
+      <style>
+	   #body{
+	   background-color:green
+	   }
+         .makeup{
+         color:green;
+         }
+      </style>
+      <script>
+         function display(){
+         	var name = document.getElementById("name").value;
+         	if(name == "" || name == null){
+         		alert("please enter name");
+         	}else{
+         	alert("welcome "+ document.getElementById("name").value);
+         	}
+         	
+         }
+      </script>
+   </head>
+   <body style="background-color:green">
+      <form onsubmit="display()">
+         <label> Enter age(for PAN card)</label>
+         <input type="number" min="8" max="10"required</input>
+         <br> </br>
+         <label> Enter First Name </label>
+         <input type="text" id="name" maxlength="15"> </input>
+         <br></br>
+         <label> Enter last Name </label>
+         <input type="text"minlength="2"maxlength="10"></input>
+         <br> </br>
+         <label class="makeup">Enter mobile Number</label>
+         <input type="required place holder= +91 0123456789"></input>
+         <br></br>
+         <label> Enter password </label>
+         <input type = "password" minlength="8"place holder="password"></input>
+         <br></br>
+         <button type="submit">clicke me</button>
+         <button type="reset"> re set</button>
+      </form>
+   </body>
+</html>
